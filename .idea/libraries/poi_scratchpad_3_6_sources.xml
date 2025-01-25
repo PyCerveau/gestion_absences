@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="poi-scratchpad-3.6-sources">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Downloads/poi-scratchpad-3.6-sources.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/poi-scratchpad-3.8-beta1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

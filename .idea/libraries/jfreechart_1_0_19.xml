@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="jfreechart-1.0.19">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../appli-Gestion-absences/jfreechart-1.0.19.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jfreechart-1.0.19/lib/jfreechart-1.0.19-swt.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jfreechart-1.0.19/lib/jfreechart-1.0.19-experimental.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jfreechart-1.0.19/jfreechart-1.0.19-demo.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jfreechart-1.0.19/lib/jfreechart-1.0.19.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jfreechart-1.0.19/lib/jfreesvg-2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$USER_HOME$/Downloads/jfreechart-1.0.19/experimental" />
+      <root url="file://$USER_HOME$/Downloads/jfreechart-1.0.19/source" />
+      <root url="file://$USER_HOME$/Downloads/jfreechart-1.0.19/swt" />
+      <root url="file://$USER_HOME$/Downloads/jfreechart-1.0.19/tests" />
+    </SOURCES>
+  </library>
+</component>
