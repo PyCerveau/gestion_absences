@@ -9,8 +9,9 @@
 /Users/macbookpro/Code/gestion-absences/src/main/java/com/uta/GestionEnseignant.java
 /Users/macbookpro/Code/gestion-absences/src/main/java/com/uta/GestionEtudiant.java
 /Users/macbookpro/Code/gestion-absences/src/main/java/com/uta/GestionModulesPanel.java
+/Users/macbookpro/Code/gestion-absences/src/main/java/com/uta/GestionSeancePanel.java
 /Users/macbookpro/Code/gestion-absences/src/main/java/com/uta/GestionUtilisateurPanel.java
-/Users/macbookpro/Code/gestion-absences/src/main/java/com/uta/ListeClassePanel.java
+/Users/macbookpro/Code/gestion-absences/src/main/java/com/uta/ImprimerListePanel.java
 /Users/macbookpro/Code/gestion-absences/src/main/java/com/uta/Main.java
 /Users/macbookpro/Code/gestion-absences/src/main/java/com/uta/StatistiquesPanel.java
 /Users/macbookpro/Code/gestion-absences/src/main/java/com/uta/VoirAbsenRePanel.java
@@ -24,6 +25,8 @@
 /Users/macbookpro/Code/gestion-absences/src/main/java/com/uta/dao/EnseignantDAO.java
 /Users/macbookpro/Code/gestion-absences/src/main/java/com/uta/dao/EtudiantDAO.java
 /Users/macbookpro/Code/gestion-absences/src/main/java/com/uta/dao/ModuleDAO.java
+/Users/macbookpro/Code/gestion-absences/src/main/java/com/uta/dao/PrintDAO.java
+/Users/macbookpro/Code/gestion-absences/src/main/java/com/uta/dao/SeanceDAO.java
 /Users/macbookpro/Code/gestion-absences/src/main/java/com/uta/dao/SpecialiteDAO.java
 /Users/macbookpro/Code/gestion-absences/src/main/java/com/uta/dao/StatistiquesDAO.java
 /Users/macbookpro/Code/gestion-absences/src/main/java/com/uta/dao/UserDAO.java

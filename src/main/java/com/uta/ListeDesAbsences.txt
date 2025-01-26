@@ -1,0 +1,7 @@
+Liste des Absences
+==================
+Matricule	Nom	Prénom	Absent	Present	
+------------------
+03200373	dabo	ali	false	false	
+32932043094	adedokun	luoise	false	false	
+15221000S	alloma	jean-luc	false	false	

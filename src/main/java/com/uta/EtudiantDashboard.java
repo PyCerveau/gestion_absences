@@ -85,7 +85,7 @@ public class EtudiantDashboard extends JFrame {
 // Menu latéral
         JPanel menuLateral = new JPanel();
         menuLateral.setLayout(new BoxLayout(menuLateral, BoxLayout.Y_AXIS)); // Disposition en colonne
-        menuLateral.setBackground(new Color(34, 139, 34)); // Vert foncé
+        menuLateral.setBackground(new Color(37, 66, 108)); // Vert foncé
         menuLateral.setBorder(BorderFactory.createEmptyBorder(20, 10, 20, 10)); // Espacement du menu
 
 // Titre du menu

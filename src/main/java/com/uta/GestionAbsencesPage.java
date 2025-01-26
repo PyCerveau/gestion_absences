@@ -54,7 +54,7 @@ public class GestionAbsencesPage extends JFrame{
                 g2d.dispose();
             }
         };
-        ImageIcon userIcon = new ImageIcon("src/main/java/com/uta/icons/user.png");
+        ImageIcon userIcon = new ImageIcon("src/main/java/com/uta/icons/a.png");
         Image  Icon = userIcon.getImage().getScaledInstance(100, 100, Image.SCALE_SMOOTH);
         photoLabel.setIcon(new ImageIcon(Icon));
         photoLabel.setPreferredSize(new Dimension(100, 100));
@@ -102,7 +102,6 @@ public class GestionAbsencesPage extends JFrame{
 
 // Création des boutons avec icônes et texte alignés
         JButton btnStatistiques = createMenuButton("Statistiques", "src/main/java/com/uta/icons/—Pngtree—data charts creatives_605908.png");
-        JButton btnEnregistrerAbsences = createMenuButton("Enregistrer les absences", "src/main/java/com/uta/icons/mark.png");
         JButton btnConsulterAbsences = createMenuButton("Consulter les absences", "src/main/java/com/uta/icons/consultant.png");
         JButton btnGestionModules = createMenuButton("Gestion des modules", "src/main/java/com/uta/icons/modules.png");
         JButton btnGestionUtilisateur = createMenuButton("Gestion des Utilisateurs", "src/main/java/com/uta/icons/special-day.png");
@@ -114,7 +113,7 @@ public class GestionAbsencesPage extends JFrame{
         JButton btnDeconnexion = createMenuButton("Se déconnecter", "src/main/java/com/uta/icons/logout.png");
 
 // Liste des boutons à ajouter
-        JButton[] buttons = {btnStatistiques, btnEnregistrerAbsences, btnConsulterAbsences, btnGestionModules,
+        JButton[] buttons = {btnStatistiques,btnConsulterAbsences, btnGestionModules,
                 btnGestionUtilisateur, btnGestionEtudiant, btnGestionEnseignant, btnGestionClasse,
                 btnGestionListeClasse, btnGestionAbout, btnDeconnexion};
 
@@ -155,7 +154,7 @@ public class GestionAbsencesPage extends JFrame{
                 g.drawImage(logoImage, x, y, null);
             }
         };
-        logoPanel.setPreferredSize(new Dimension(800, 600)); // Définir la taille du panel
+        logoPanel.setPreferredSize(new Dimension(1200, 900)); // Définir la taille du panel
         mainContentPanel.add(logoPanel, "Logo"); // Ajouter le panel avec le logo
         gestionAbsencesFrame.add(mainContentPanel, BorderLayout.CENTER);
 
@@ -175,7 +174,6 @@ public class GestionAbsencesPage extends JFrame{
         btnGestionClasse.addActionListener(e -> showPanel("Gestion des classes", new GestionClasse(connection)));
         btnGestionEtudiant.addActionListener(e -> showPanel("Gestion des Etudiants", new GestionEtudiant(connection)));
         btnGestionModules.addActionListener(e -> showPanel("Gestion des modules", new GestionModulesPanel(connection)));
-        btnEnregistrerAbsences.addActionListener(e -> showPanel("Gestion des absences", new EnregistrerAbsencesPanel(connection)));
         btnGestionListeClasse.addActionListener(e -> showPanel("Gestion des seances", new GestionSeancePanel(connection)));
     } catch (SQLException ex) {
         // Gestion des erreurs de connexion

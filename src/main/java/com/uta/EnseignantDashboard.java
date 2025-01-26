@@ -85,7 +85,7 @@ public class EnseignantDashboard extends JFrame {
 // Menu latéral
         JPanel menuLateral = new JPanel();
         menuLateral.setLayout(new BoxLayout(menuLateral, BoxLayout.Y_AXIS)); // Disposition en colonne
-        menuLateral.setBackground(new Color(34, 139, 34)); // Vert foncé
+        menuLateral.setBackground(new Color(37, 66, 108)); // Vert foncé
         menuLateral.setBorder(BorderFactory.createEmptyBorder(20, 10, 20, 10)); // Espacement du menu
 
 // Titre du menu
@@ -98,14 +98,13 @@ public class EnseignantDashboard extends JFrame {
 
 // Création des boutons avec icônes et texte alignés
         JButton btnStatistiques = createMenuButton("Statistiques", "src/main/java/com/uta/icons/—Pngtree—data charts creatives_605908.png");
-        JButton btnEnregistrerAbsences = createMenuButton("Enregistrer les absences", "src/main/java/com/uta/icons/mark.png");
         JButton btnConsulterAbsences = createMenuButton("Consulter les absences", "src/main/java/com/uta/icons/consultant.png");
-        JButton btnGestionListeClasse = createMenuButton("Imprimer la liste", "src/main/java/com/uta/icons/to-do-list.png");
+        JButton btnGestionListeClasse = createMenuButton("Liste de classe", "src/main/java/com/uta/icons/to-do-list.png");
         JButton btnGestionAbout = createMenuButton("A propos de nous", "src/main/java/com/uta/icons/information-button.png");
         JButton btnDeconnexion = createMenuButton("Se déconnecter", "src/main/java/com/uta/icons/logout.png");
 
 // Liste des boutons à ajouter
-        JButton[] buttons = {btnStatistiques, btnEnregistrerAbsences, btnConsulterAbsences,
+        JButton[] buttons = {btnStatistiques, btnConsulterAbsences,
                 btnGestionListeClasse, btnGestionAbout, btnDeconnexion};
 
 // Ajouter les boutons au menu latéral avec espacement uniforme
@@ -157,7 +156,7 @@ public class EnseignantDashboard extends JFrame {
         try {
             // Tentative de connexion à la base de données
             Connection connection = DatabaseConnection.getConnection();
-            btnEnregistrerAbsences.addActionListener(e -> showPanel("Enregistrer les absences", new EnregistrerAbsencesPanel(connection)));
+            btnGestionListeClasse.addActionListener(e -> showPanel("Liste de classe", new ImprimerListePanel(connection)));
             btnConsulterAbsences.addActionListener(e -> showPanel("Consulter les absences", new VoirAbsenRePanel(connection)));
         } catch (SQLException ex) {
             // Gestion des erreurs de connexion
@@ -165,7 +164,6 @@ public class EnseignantDashboard extends JFrame {
             JOptionPane.showMessageDialog(gestionAbsencesFrame, "Erreur de connexion à la base de données", "Erreur", JOptionPane.ERROR_MESSAGE);
         }
 
-        btnGestionListeClasse.addActionListener(e -> showPanel("Imprimer la liste", new ImprimerListePanel()));
         btnGestionAbout.addActionListener(e -> showPanel("A propos de nous", new AboutPanel()));
 
         btnDeconnexion.addActionListener(e -> {
