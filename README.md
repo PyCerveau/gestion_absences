@@ -21,7 +21,7 @@ Ce projet est une application de bureau (desktop) développée en Java Swing ave
 - **Langage principal :** Java
 - **Interface utilisateur :** Java Swing
 - **Gestion de projet :** Maven
-- **Base de données :** PostgreSQL
+- **Base de données :** Mysql
 - **Versionnement :** Git
 
 ---
