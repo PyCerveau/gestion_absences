@@ -60,7 +60,7 @@ public class Main extends JFrame {
         ImageIcon backgroundIcon = new ImageIcon("src/main/java/com/uta/icons/a.png");
         Image backgroundImage = backgroundIcon.getImage().getScaledInstance(410, 560, Image.SCALE_SMOOTH); // Redimensionner l'image
         JLabel backgroundLabel = new JLabel(new ImageIcon(backgroundImage));
-        this.Bleu.setLayout(new BorderLayout());  // Utiliser un layout pour positionner correctement l'image
+        this.Bleu.setLayout(new BorderLayout());
         this.Bleu.add(backgroundLabel, BorderLayout.CENTER);
 
 

@@ -26,7 +26,7 @@ public class EnregistrerAbsencesPanel extends JPanel {
         titlePanel.setBackground(new Color(4, 32, 32)); // Fond vert
 
         // Image à gauche
-        ImageIcon icon = new ImageIcon("src/main/java/com/uta/icons/holidays-and-absence.png"); // Remplacez le chemin par le bon chemin de votre image
+        ImageIcon icon = new ImageIcon("src/main/java/com/uta/icons/holidays-and-absence.png");
         JLabel imageLabel = new JLabel(icon);
         titlePanel.add(imageLabel);
 
